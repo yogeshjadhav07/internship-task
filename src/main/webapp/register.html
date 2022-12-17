@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+
+
+
+  <title>Sign up </title>
+
+</head>
+
+<body>
+<style>
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: rgb(0, 251, 220)
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.login-wrapper {
+
+  height: 100vh;
+
+  width: 100vw;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+.form {
+
+  position: relative;
+
+  width: 100%;
+
+  max-width: 380px;
+
+  padding: 80px 40px 40px;
+
+  background: rgba(0,0,0,0.7);
+
+  border-radius: 10px;
+
+  color: #fff;
+
+  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+
+}
+
+.form::before {
+
+  content:'';
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 50%;
+
+  height: 100%;
+
+  background: rgba(255,255,255, 0.08);
+
+  transform: skewX(-26deg);
+
+  transform-origin: bottom left;
+
+  border-radius: 10px;
+
+  pointer-events: none;
+
+}
+
+.form img {
+
+  position: absolute;
+
+  top: -50px;
+
+  left: calc(50% - 50px);
+
+  width: 100px;
+
+  background: rgba(255,255,255, 0.8);
+
+  border-radius: 50%;
+
+}
+
+.form h2 {
+
+  text-align: center;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 2rem;
+
+  color: #ff652f;
+
+}
+
+.form .input-group {
+
+  position: relative;
+
+}
+
+.form .input-group input {
+
+  width: 100%;
+
+  padding: 10px 0;
+
+  font-size: 1rem;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 30px;
+
+  border: none;
+
+  border-bottom: 1px solid #fff;
+
+  outline: none;
+
+  background-color: transparent;
+
+  color: inherit;
+
+}
+
+.form .input-group label {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  padding: 10px 0;
+
+  font-size: 1rem;
+
+  pointer-events: none;
+
+  transition: .3s ease-out;
+
+}
+
+.form .input-group input:focus + label,
+
+.form .input-group input:valid + label {
+
+  transform: translateY(-18px);
+
+  color: #ff652f;
+
+  font-size: .8rem;
+
+}
+
+.submit-btn {
+
+  display: block;
+
+  margin-left: auto;
+
+  border: none;
+
+  outline: none;
+
+  background: #ff652f;
+
+  font-size: 1rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  padding: 10px 20px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+}
+
+</style>
+  <div class="login-wrapper">
+
+    <form action="Register" class="form">
+
+      <img src="images/avatar.png" alt="">
+         
+
+      <h2>Sign Up</h2>
+
+      <div class="input-group">
+
+        <input type="email" name="email" required >
+
+        <label >Email Id</label>
+
+      </div>
+       <div class="input-group">
+
+        <input type="text" name="name" size="10" required>
+
+        <label>Name</label>
+
+      </div>
+      
+      <div class="input-group">
+
+        <input type="password" name="loginPassword" id="loginPassword" required>
+
+        <label>Password</label>
+
+      </div>
+
+      <div class="input-group">
+
+        <input type="text" name="ConfirmPassword" id="ConfirmPassword" required>
+
+        <label >Confirm Password</label>
+
+      </div>
+
+      <input type="submit" value="Sign up" class="submit-btn">
+      
+<div><a href="index.html" style="color:inherit">Already have an account?</a></div>
+
+
+
+    </form>
+
+
+
+   
+
+    </div>
+
+
+
+
+</body>
+
+</html>
